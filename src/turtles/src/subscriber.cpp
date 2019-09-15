@@ -4,7 +4,7 @@
 
 void setTurtleData(const turtles::turtleQuality::ConstPtr& turtleData) {
     if (turtleData->quality >= 7) {
-        std::cout << "Turtle number " << turtleData->index << " has a social credit score of " << turtleData->quality << ". We should let it into the country." << '\n';
+        ROS_INFO("Turtle number %d has a social credit score of %d. We should let it into the country.", (int)turtleData->index, (int)turtleData->quality);
     }
 }
 
