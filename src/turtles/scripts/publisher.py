@@ -10,7 +10,7 @@ import random
 from turtles.msg import turtleQuality
 
 if __name__ == "__main__":
-    pub = rospy.Publisher("turtles", turtleQuality)
+    pub = rospy.Publisher("turtles", turtleQuality, queue_size=10)
     rospy.init_node('publisherNode')
     rate = rospy.Rate(5)
     index = 0
