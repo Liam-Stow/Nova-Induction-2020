@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="turtles" type="publisher.py" name="publisher.py"/>
+    <node pkg="turtles" type="subscriber" name="subscriber" />    
+</launch>
